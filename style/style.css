@@ -1,0 +1,293 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body * {
+     font-family: 'Public Sans', sans-serif;
+}
+html {
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+}
+img, iframe {
+     max-width: 100%;
+     margin: 0 auto;
+}
+.bg-black {
+     background: black;
+}
+.bg-light {
+     background: rgb(235, 235, 235);
+}
+.fc-black, .fc-black * {
+     color: black;
+}
+.fc-white * {
+     color: white;
+}
+.btn {
+     background: black;
+     color: white;
+     display: inline-block;
+     padding: 1rem;
+     margin: 2rem 0 1rem 0;
+}
+.btn-alt {
+     background: white;
+     color: black;
+     display: inline-block;
+     padding: 1rem;
+}
+.container {
+     position: relative;
+     max-width: 90%;
+     margin: 0 auto;
+}
+.container--main {
+     max-width: 95%;
+     margin: 0 auto;
+}
+.text-center {
+     text-align: center;
+}
+.emphasize {
+     font-weight: bold;
+     font-size: 2em;
+}
+.container--mainArrow {
+     display: inline-block;
+     position: absolute;
+     right: 0;
+     bottom: 1rem;
+}
+.mainArrow {
+     background: black;
+     padding: 1.5rem;
+     border-radius: 50%;
+     display: inline-block;
+     cursor: pointer;
+}
+.aspect-maintain {
+     position: relative;
+     padding-bottom: 56.25%;
+}
+.aspect-maintain iframe {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+}
+.img-center img{
+     display: block;
+     margin: 0 auto;
+}
+
+
+main {
+     background-image: url(../images/main-bg.jpg);
+     background-size: 110%;
+     background-repeat: no-repeat;
+     background-position: center left;
+     padding: 5rem 0;
+}
+h1 {
+     font-size: 4.8rem;
+     margin-bottom: 2rem;
+}
+h2 {
+     font-size: 3rem;
+}
+h3 {
+     font-size: 1.5rem;
+}
+h4 {
+     font-size: 1.75rem;
+}
+p {
+     color: grey;
+     font-size: 1.2rem;
+     line-height: 2rem;
+}
+nav {
+     padding: .5rem 1rem;
+}
+nav li {
+     display: none;
+     height: 3rem;
+}
+
+.nav-item-mobile-left{
+     display: block;
+     float: left;
+     font-size: 4rem;
+}
+.nav-item-mobile-right{
+     display: block;
+     float: right;
+     height: 100%;
+}
+.firstVisit {
+     max-width: 25%;
+     min-width: 15rem;
+     margin-top: 5rem;
+     padding: 1rem 1rem 1rem 0;
+}
+.firstVisit > * {
+     padding-left: 2rem;
+}
+.firstVisit h3 {
+     border-left: solid white .2rem;
+     padding: 2rem 0 2rem 2rem;
+}
+.firstVisit p {
+     margin-bottom: 2rem;
+}
+.firstVisit .btn-alt {
+     padding-left: 1rem;
+     margin-left: 2rem;
+     margin-bottom: 1.5rem;
+}
+.threePiece, .momentum, .staff, .lookbook {
+     padding: 5rem 0;
+}
+.threePiece img {
+     margin: 2rem 0;
+}
+.momentum h2 {
+     margin-bottom: 2rem;
+}
+.momentum a {
+     margin-bottom: 2rem;
+}
+.staff section {
+     margin-bottom: 5rem;
+     position: relative;
+}
+.staffLabel {
+     background: black;
+     display: block;
+     padding: 1.5rem 1rem;
+     line-height: 2rem;
+     width: 80%;
+     position: absolute;
+     bottom: -5rem;
+     left: 10%;
+     margin-bottom: 3rem;
+}
+.offer div.container {
+     padding: 2rem;
+     background-image: url(../images/offerbg.jpg);
+     background-size: cover;
+     background-position: right;
+     background-repeat: no-repeat;
+     border: solid lightgrey .8rem;
+     border-radius: 2rem;
+}
+.offer a {
+     margin-top: 6rem;
+}
+.offer p {
+     color: black;
+     margin-top: 1rem;
+}
+.lookbook span {
+     display: block;
+     margin-bottom: 2rem;
+}
+.lookbook img {
+     margin-bottom: 3rem;
+     position: relative;
+     width: 100%
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* RESPONSIVE NAVBAR */
+
+
+@media all and (max-width: 700px) {
+     main {
+          background-size: cover;
+          background-position: center;
+     }
+}
+
+
+@media all and (min-width: 700px) {
+     .nav-item-mobile-left, .nav-item-mobile-right {
+          display: none;
+     }
+     .nav-item-mobile-right {
+          display: block;
+          float: none;
+     }
+     .nav-item-desktop {
+          display: block;
+          float: left;
+     }
+     .nav-text {
+          line-height: 3rem;
+     }
+     .nav-item-desktop--large {
+          width: 14%
+     }
+     .nav-item-desktop--medium {
+          width: 10%
+     }
+     .nav-item-desktop--small {
+          width: 6%
+     }
+     .nav-item-desktop--right {
+          text-align: right;
+     }
+}
+
+@media all and (min-width: 700px) {
+     .dt-split-three {
+          float: left;
+          width: 33%;
+          padding: 1%;
+     }
+}
+
+@media all and (min-width: 1000px) {
+     html {
+          font-size: 100%;
+     }
+     .container {
+          width: min(80rem, 90%);
+     }
+     .container--main {
+          width: 90%;
+     }
+     .firstVisit {
+          max-width: 30%;
+     }
+}
