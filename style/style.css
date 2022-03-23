@@ -103,7 +103,7 @@ img, iframe {
 
 
 main {
-     background-image: url(../images/main-bg.jpg);
+     background-image: url(../images/heroCarousel/main-bg1.jpg);
      background-size: 110%;
      background-repeat: no-repeat;
      background-position: center left;
@@ -112,6 +112,7 @@ main {
 h1 {
      font-size: 4.8rem;
      margin-bottom: 2rem;
+     font-weight: bold;
 }
 h2 {
      font-size: 3rem;
@@ -134,7 +135,15 @@ nav li {
      display: none;
      height: 3rem;
 }
+.divider{
+     width: 75%;
+     border: solid grey 2px;
+     margin: 4rem auto 5rem auto;
+}
 
+.nav-item-desktop{
+     font-weight: bold;
+}
 .nav-item-mobile-left{
      display: block;
      float: left;
@@ -166,7 +175,7 @@ nav li {
      margin-left: 2rem;
      margin-bottom: 1.5rem;
 }
-.threePiece, .momentum, .staff, .lookbook {
+.threePiece, .momentum, .staff, .lookbook, #contact {
      padding: 5rem 0;
 }
 .threePiece img {
@@ -177,6 +186,9 @@ nav li {
 }
 .momentum a {
      margin-bottom: 2rem;
+}
+.staff{
+     padding-bottom: 0;
 }
 .staff section {
      margin-bottom: 5rem;
@@ -209,6 +221,9 @@ nav li {
      color: black;
      margin-top: 1rem;
 }
+.lookbook{
+     padding-bottom: 0;
+}
 .lookbook span {
      display: block;
      margin-bottom: 2rem;
@@ -218,6 +233,17 @@ nav li {
      position: relative;
      width: 100%
 }
+.contact h2, .contact h3{
+     padding-bottom: 1rem;
+}
+
+
+
+.weird{
+     margin-top: 0;
+     margin-bottom: 4rem;
+}
+
 
 
 /******************************************
@@ -274,6 +300,39 @@ nav li {
           float: left;
           width: 33%;
           padding: 1%;
+     }
+     .contact-left{
+          float:left;
+          width: 40%;
+          padding-inline: 5%;
+     }
+     .contact-right{
+          float:right;
+          width: 60%;
+          padding-inline: 5%;
+     }
+     .small-inputs{
+          display: flex;
+          justify-content: space-between;
+     }
+     input{
+          width: 45%;
+     }
+     textarea{
+          width: 100%;
+          margin-top: 1rem;
+     }
+     input, textarea{
+          border-width: 2px;
+          border-radius: 5px;
+          border-color: solid grey;
+          font-size: 2rem;
+     }
+     .contact input, .contact textarea{
+          display: block;
+     }
+     .contact h2{
+          margin-bottom: 2rem;
      }
 }
 

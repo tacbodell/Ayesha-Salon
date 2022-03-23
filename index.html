@@ -28,7 +28,7 @@
 					<li class="nav-item-desktop nav-item-desktop--medium nav-text"><a href="#services">SERVICES</a></li>
 					<li class="nav-item-desktop nav-item-desktop--medium nav-text"><a href="#news">NEWS</a></li>
 					<li class="nav-item-desktop nav-item-desktop--medium nav-text"><a href="#lookbook">LOOKBOOK</a></li>
-					<li class="nav-item-desktop nav-item-desktop--medium nav-text"><a href="#">CONTACT</a></li>
+					<li class="nav-item-desktop nav-item-desktop--medium nav-text"><a href="#contact">CONTACT</a></li>
 					<li class="nav-item-desktop nav-item-desktop--small nav-text"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
 					<li class="nav-item-desktop nav-item-desktop--small nav-text"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
 					<li class="nav-item-desktop nav-item-desktop--large nav-text nav-item-desktop--right"><a href="#">- BOOK ONLINE</a></li>
@@ -40,15 +40,15 @@
 			<div class="container container--main">
 				<h1>BLONDE & HIGHLIGHT</h1>
 				<p class="fc-black">DIVIDE YOUR UNIQUENESS BY YOUR HAIRSTYLE</p>
-				<a href="#" class="btn">- OUR SERVICES</a>
+				<a href="#services" class="btn">- OUR SERVICES</a>
 				<section class="firstVisit bg-black fc-white">
 					<h3>YOUR FIRST VISIT?</h3>
 					<p><span class="emphasize">-20%</span> FOR THE FIRST CLASSIC HAIR COLORING</p>
-					<a href="#" class="btn-alt">- BOOK ONLINE</a>
+					<a href="#contact" class="btn-alt">- BOOK ONLINE</a>
 				</section>
 				<div class="container--mainArrow fc-white">
-					<div class="mainArrow"><i class="fa-solid fa-arrow-left"></i></div>
-					<div class="mainArrow"><i class="fa-solid fa-arrow-right"></i></div>
+					<div class="mainArrow" id="mainArrowLeft"><i class="fa-solid fa-arrow-left"></i></div>
+					<div class="mainArrow" id="mainArrowRight"><i class="fa-solid fa-arrow-right"></i></div>
 				</div>
 			</div>
 		</main>
@@ -114,6 +114,8 @@
 			</div>
 		</section>
 
+		<div class="divider"></div>
+
 		<section class="offer">
 			<div class="container bg-light">
 				<h3>COLOUR DAY OFFER!</h3>
@@ -126,7 +128,7 @@
 			<div class="container">
 				<h2>OUR LOOKBOOK</h2>
 				<span class="emphasize">-</span>
-				<section>
+				<section class="clearfix">
 					<div class="dt-split-three fancy-hover">
 						<img src="images/layerDye.png" alt="">
 						<img src="https://www.thetrendspotter.net/wp-content/uploads/2019/07/Long-Bob-Hairstyle.jpg" alt="">
@@ -142,5 +144,25 @@
 				</section>
 			</div>
 		</section>
+
+		<div class="divider weird"></div>
+
+		<section class="contact bg-light" id="contact">
+			<div class="container clearfix">
+				<section class="contact-left">
+					<h2>Questions or Concerns?</h2>
+					<h3>Without your input, we would never be the business we are today. Please fill out this form with any messages you'd like us to see, and we will get back to you as soon as we can.</h3>
+				</section>
+				<section class="contact-right">
+					<div class="small-inputs">
+						<input type="text" placeholder="Name">
+						<input type="text" placeholder="E-Mail">
+					</div>
+					<textarea name="" id="" cols="30" rows="10" placeholder="Please write us a message."></textarea>
+				</section>
+			</div>
+		</section>
+
+		<script src="js/main.js"></script>
 	</body>
 </html>
