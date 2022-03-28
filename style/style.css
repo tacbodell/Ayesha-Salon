@@ -50,11 +50,17 @@ img, iframe {
      padding: 1rem;
      margin: 2rem 0 1rem 0;
 }
+.btn:hover{
+     background: rgb(24, 24, 24);
+}
 .btn-alt {
      background: white;
      color: black;
      display: inline-block;
      padding: 1rem;
+}
+.btn-alt:hover{
+     background: rgb(212, 212, 212);
 }
 .container {
      position: relative;
@@ -84,6 +90,11 @@ img, iframe {
      border-radius: 50%;
      display: inline-block;
      cursor: pointer;
+     transition-property: background;
+     transition-duration: .3s;
+}
+.mainArrow:hover {
+     background: orange;
 }
 .aspect-maintain {
      position: relative;
@@ -141,6 +152,8 @@ nav li {
      margin: 4rem auto 5rem auto;
 }
 
+
+
 .nav-item-desktop{
      font-weight: bold;
 }
@@ -154,6 +167,7 @@ nav li {
      float: right;
      height: 100%;
 }
+
 .firstVisit {
      max-width: 25%;
      min-width: 15rem;
@@ -236,7 +250,44 @@ nav li {
 .contact h2, .contact h3{
      padding-bottom: 1rem;
 }
+.small-inputs{
+     display: flex;
+     justify-content: space-between;
+}
+input{
+     width: 45%;
+}
+textarea{
+     width: 100%;
+     margin-top: 1rem;
+}
+input, textarea{
+     border-width: 2px;
+     border-radius: 5px;
+     border-color: solid grey;
+     font-size: 2rem;
+     display: block;
+     background: white;
+}
 
+#submit{
+     width: 60%;
+     margin-inline: auto;
+     margin-top: 1rem;
+     background: rgb(255, 202, 102);
+     border: solid 2px grey;
+     padding: 1rem;
+     color: black;
+     border-radius: .5rem;
+     cursor: pointer;
+}
+#submit:hover{
+     background: rgb(224, 178, 93);
+}
+
+.contact h2{
+     margin-bottom: 2rem;
+}
 
 
 .weird{
@@ -310,29 +361,6 @@ nav li {
           float:right;
           width: 60%;
           padding-inline: 5%;
-     }
-     .small-inputs{
-          display: flex;
-          justify-content: space-between;
-     }
-     input{
-          width: 45%;
-     }
-     textarea{
-          width: 100%;
-          margin-top: 1rem;
-     }
-     input, textarea{
-          border-width: 2px;
-          border-radius: 5px;
-          border-color: solid grey;
-          font-size: 2rem;
-     }
-     .contact input, .contact textarea{
-          display: block;
-     }
-     .contact h2{
-          margin-bottom: 2rem;
      }
 }
 
