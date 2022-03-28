@@ -146,6 +146,9 @@ nav li {
      display: none;
      height: 3rem;
 }
+nav a:hover, nav i:hover{
+     color: grey;
+}
 .divider{
      width: 75%;
      border: solid grey 2px;
@@ -250,6 +253,9 @@ nav li {
 .contact h2, .contact h3{
      padding-bottom: 1rem;
 }
+.contact-right{
+     margin-top: 1rem;
+}
 .small-inputs{
      display: flex;
      justify-content: space-between;
@@ -352,15 +358,29 @@ input, textarea{
           width: 33%;
           padding: 1%;
      }
+     .dt-split-two {
+          float: left;
+          width: 50%;
+          padding-inline: 1%;
+     }
      .contact-left{
           float:left;
           width: 40%;
           padding-inline: 5%;
      }
+     .contact-left h2{
+          line-height: 3.5rem;
+          margin-top: 2rem;
+     }
+     .contact-left h3{
+          margin-top: 4.5rem;
+          line-height: 2rem;
+     }
      .contact-right{
           float:right;
           width: 60%;
           padding-inline: 5%;
+          margin-top: 0;
      }
 }
 
